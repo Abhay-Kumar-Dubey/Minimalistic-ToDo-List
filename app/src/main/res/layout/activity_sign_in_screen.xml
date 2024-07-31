@@ -37,24 +37,24 @@
 
             <EditText
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="Enter Email id "
                 android:paddingStart="16dp"
                 android:textSize="25sp"
                 android:background="@drawable/edit_text_bg"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/email">
 
             </EditText>
 
             <EditText
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="Enter Password "
                 android:paddingStart="16dp"
                 android:textSize="25sp"
                 android:background="@drawable/edit_text_bg"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/password">
 
             </EditText>
