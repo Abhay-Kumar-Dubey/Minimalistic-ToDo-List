@@ -11,11 +11,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars">
-        </ImageView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            tools:srcCompat="@drawable/login_background"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/Purple">
+        </de.hdodenhof.circleimageview.CircleImageView>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,11 +25,15 @@
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello">
+            android:text="Hello"
+                android:textStyle="bold"
+                android:textSize="20sp">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp">
             </TextView>
         </LinearLayout>
         
@@ -38,14 +44,16 @@
     </androidx.recyclerview.widget.RecyclerView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="10dp"
+        android:layout_height="120dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
         android:layout_margin="10dp"
         android:backgroundTint="@color/Purple">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,14 +61,58 @@
                 android:textSize="30sp"
             android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_margin="5dp">
+                android:layout_margin="25dp">
             </TextView>
             <ProgressBar
                 android:layout_width="100dp"
-                android:layout_height="80dp">
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp">
             </ProgressBar>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="400dp"
+            android:layout_height="320dp"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="34dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="-15dp"
+            android:src="@drawable/img">
+        </ImageView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="84dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="31dp"
+            android:drawableTop="@drawable/bottom_add"
+            android:background="@drawable/add_button"
+            android:text="Add"
+            android:textSize="15sp"
+            android:elevation="50dp">
+        </Button>
+    </RelativeLayout>
 
 </LinearLayout>
