@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.firefuro.todoapp" />
+                  <option name="mobileSdkAppId" value="1:734848569499:android:8c0a5ce8192e66de65f63e" />
+                  <option name="projectId" value="todo-list-36c1e" />
+                  <option name="projectNumber" value="734848569499" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

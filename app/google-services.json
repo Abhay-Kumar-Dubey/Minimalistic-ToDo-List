@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734848569499",
+    "project_id": "todo-list-36c1e",
+    "storage_bucket": "todo-list-36c1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734848569499:android:8c0a5ce8192e66de65f63e",
+        "android_client_info": {
+          "package_name": "com.firefuro.todoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVOHngfi2E0lzHdN8YrlO1-7J3GODKKKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -44,7 +44,8 @@
             android:background="@drawable/edit_text_bg"
             android:layout_marginTop="20dp"
             android:paddingStart="16dp"
-            android:drawableLeft="@drawable/person">
+            android:drawableLeft="@drawable/person"
+            android:id="@+id/UserName">
 
         </EditText>
         <EditText
@@ -55,7 +56,8 @@
             android:textSize="25sp"
             android:background="@drawable/edit_text_bg"
             android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/email">
+            android:drawableLeft="@drawable/email"
+            android:id="@+id/EmailId">
 
         </EditText>
 
@@ -67,7 +69,8 @@
             android:textSize="25sp"
             android:background="@drawable/edit_text_bg"
             android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/password">
+            android:drawableLeft="@drawable/password"
+            android:id="@+id/Password">
 
         </EditText>
 
@@ -78,7 +81,8 @@
             android:textSize="18sp"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
-            android:backgroundTint="@color/Purple">
+            android:backgroundTint="@color/Purple"
+            android:id="@+id/SignUpBtn">
 
         </Button>
         <LinearLayout
