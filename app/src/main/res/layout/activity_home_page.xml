@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage"
+    android:background="#fdb396"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,32 +15,37 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            tools:srcCompat="@drawable/login_background"
+            android:src="@drawable/profilepic"
             app:civ_border_width="2dp"
-            app:civ_border_color="@color/Purple">
+            app:civ_border_color="@color/Purple"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
         </de.hdodenhof.circleimageview.CircleImageView>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp">
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello"
                 android:textStyle="bold"
-                android:textSize="20sp">
+                android:textSize="30sp">
             </TextView>
             <TextView
+                android:id="@+id/nameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="20sp">
+                android:textSize="25sp">
             </TextView>
         </LinearLayout>
-        
+
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp">
     </androidx.recyclerview.widget.RecyclerView>
     <androidx.cardview.widget.CardView
@@ -77,16 +83,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="400dp"
+        <ListView
+            android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_alignBottom="@+id/button"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginTop="0dp"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="34dp">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_marginBottom="34dp"
+            tools:listitem="@layout/each_item">
+
+        </ListView>
 
         <ImageView
             android:layout_width="wrap_content"
