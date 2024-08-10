@@ -43,7 +43,9 @@
                 android:textSize="25sp"
                 android:background="@drawable/edit_text_bg"
                 android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/email">
+                android:drawableLeft="@drawable/email"
+                android:inputType="textEmailAddress"
+                android:id="@+id/signinEmail">
 
             </EditText>
 
@@ -55,7 +57,9 @@
                 android:textSize="25sp"
                 android:background="@drawable/edit_text_bg"
                 android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/password">
+                android:drawableLeft="@drawable/password"
+                android:inputType="textPassword"
+                android:id="@+id/signinPassword">
 
             </EditText>
 
@@ -66,7 +70,8 @@
                 android:textSize="18sp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:backgroundTint="@color/Purple">
+                android:backgroundTint="@color/Purple"
+                android:id="@+id/SignInButton">
 
             </Button>
 
