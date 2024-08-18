@@ -37,9 +37,11 @@ class Sign_In_Screen : AppCompatActivity() {
     fun readDatabase(email:String , password:String){
         sauth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this) {task->
             if (task.isSuccessful){
+                val currentUid = sauth.uid.toString()
                 val intent=Intent(this,HomePage::class.java)
+                intent.putExtra("UserID",currentUid)
                 startActivity(intent)
-                Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Successfully Logged In " ,Toast.LENGTH_SHORT).show()
             }
             else{
                 Toast.makeText(this,"Password or Email Id is Wrong",Toast.LENGTH_LONG).show()

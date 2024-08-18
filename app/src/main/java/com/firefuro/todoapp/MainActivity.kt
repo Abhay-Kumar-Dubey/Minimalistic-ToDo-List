@@ -34,8 +34,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-//        databaseReference=FirebaseDatabase.getInstance().getReference("Users")
+        databaseReference=FirebaseDatabase.getInstance().getReference("Users")
 
         SignUpBtn.setOnClickListener {
 
@@ -49,13 +48,16 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Please Fill Every Detail Column",Toast.LENGTH_SHORT).show()
 
             }else{
-//                databaseReference.child(Email).setValue(users)
                 auth.createUserWithEmailAndPassword(Email, password)
                     .addOnCompleteListener(this){ task ->
                         if (task.isSuccessful) {
+                            val currentUid = auth.uid.toString()
+                            databaseReference.child(currentUid).setValue(users)
                             // Sign in success, update UI with the signed-in user's information
                             val intent = Intent(this,Sign_In_Screen::class.java)
+//                            intent.putExtra("UserID",currentUid)
                             startActivity(intent)
+
 
                         } else {
                             // If sign in fails, display a message to the user.
