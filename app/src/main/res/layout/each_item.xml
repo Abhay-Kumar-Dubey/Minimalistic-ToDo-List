@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:text="Do Your DBMS assignment "
         android:gravity="center_horizontal"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="25dp"
+        android:id="@+id/listText">
     </TextView>
     <CheckBox
         android:layout_width="wrap_content"

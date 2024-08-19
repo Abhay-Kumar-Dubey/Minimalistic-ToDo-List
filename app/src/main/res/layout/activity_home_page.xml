@@ -83,16 +83,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_alignBottom="@+id/button"
             android:layout_alignParentTop="true"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="34dp"
-            tools:listitem="@layout/each_item">
+            tools:listitem="@layout/each_item"
+            android:id="@+id/TaskList">
 
-        </ListView>
+        </androidx.recyclerview.widget.RecyclerView>
 
         <ImageView
             android:layout_width="wrap_content"
